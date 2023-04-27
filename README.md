@@ -1,7 +1,7 @@
 Lab - Depth-limiting Web Crawler
 ================================
 
-Add depth-limiting to the concurrent web crawler from [crawl2.go](https://github.com/CodersSquad/hello-gophers/blob/master/src/crawl2.go).
+Add depth-limiting to the concurrent web crawler from [web-crawler.go](./web-crawler.go).
 That is, if the user sets `-depth=3`, then only URLs reachable by at most 3 links will be fetched.
 
 - In order to make it easier to read, generate a log file with the found links. Please not print links on terminal. Your program should run as follows:
