@@ -3,7 +3,7 @@
 APP_NAME=web-crawler
 
 build:
-	go mod init $APP_NAME
+	go mod init ${APP_NAME}
 	go mod tidy
 	go build -o ${APP_NAME} ${APP_NAME}.go
 
@@ -18,4 +18,4 @@ test: build
 	./${APP_NAME} http://www.gopl.io/ | true
 
 clean:
-	rm -rf ${APP_NAME} *.txt
+	rm -rf ${APP_NAME} *.txt *.mod *.sum
