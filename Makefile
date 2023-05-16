@@ -7,7 +7,7 @@ build:
 	go mod tidy
 	go build -o ${APP_NAME} ${APP_NAME}.go
 
-test: build
+test: clean build
 	@echo Test 1
 	./${APP_NAME} -depth=2 -results=test1.txt https://google.com/ | true
 	@echo Test 2
