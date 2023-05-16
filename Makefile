@@ -2,7 +2,7 @@
 
 APP_NAME=web-crawler
 
-build:
+build: clean
 	go mod init ${APP_NAME}
 	go mod tidy
 	go build -o ${APP_NAME} ${APP_NAME}.go
